@@ -4,7 +4,6 @@
              x:Class="ZamoraAlcivarExamenFinal.Views.ListaSuscripcionesPage"
              Title="Suscripciones">
 
-    <RefreshView Command="{Binding CargarSuscripcionesCommand}" IsRefreshing="{Binding IsBusy, Mode=OneWay}">
         <CollectionView ItemsSource="{Binding Suscripciones}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -19,5 +18,4 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </RefreshView>
 </ContentPage>

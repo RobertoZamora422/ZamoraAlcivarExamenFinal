@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 using SQLite;
 using ZamoraAlcivarExamenFinal.Models;
 using System.Diagnostics;
+using System.IO;
+using Microsoft.Maui.Storage;
+
 
 namespace ZamoraAlcivarExamenFinal.Services
 {

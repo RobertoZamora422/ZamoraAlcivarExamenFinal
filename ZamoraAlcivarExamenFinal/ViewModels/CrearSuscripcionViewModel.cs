@@ -29,7 +29,7 @@ namespace ZamoraAlcivarExamenFinal.ViewModels
         {
             int costoEntero = (int)(suscripcion.CostoMensual * 100);
 
-            if (costoEntero % 2 == 0)
+            if (((int)suscripcion.CostoMensual) % 2 == 0)
             {
                 await Shell.Current.DisplayAlert("Error", "El costo mensual debe ser un valor impar.", "OK");
                 return;

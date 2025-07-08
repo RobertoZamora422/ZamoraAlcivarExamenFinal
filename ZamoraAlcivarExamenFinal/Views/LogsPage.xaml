@@ -4,7 +4,6 @@
              x:Class="ZamoraAlcivarExamenFinal.Views.LogsPage"
              Title="Registro de Logs">
 
-    <RefreshView Command="{Binding CargarLogsCommand}" IsRefreshing="{Binding IsBusy, Mode=OneWay}">
         <CollectionView ItemsSource="{Binding Logs}">
             <CollectionView.ItemTemplate>
                 <DataTemplate>
@@ -12,5 +11,4 @@
                 </DataTemplate>
             </CollectionView.ItemTemplate>
         </CollectionView>
-    </RefreshView>
 </ContentPage>
