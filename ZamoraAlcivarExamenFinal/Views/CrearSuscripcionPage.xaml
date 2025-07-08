@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZamoraAlcivarExamenFinal.Views.CrearSuscripcionPage"
+             Title="Roberto Zamora - 10/08/2005">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+            <Label Text="Nueva Suscripción" FontSize="Title" HorizontalOptions="Center" />
+
+            <Entry Placeholder="Servicio" Text="{Binding Suscripcion.Servicio}" />
+            <Entry Placeholder="Correo Electrónico" Keyboard="Email" Text="{Binding Suscripcion.CorreoAsociado}" />
+            <Entry Placeholder="Costo Mensual" Keyboard="Numeric" Text="{Binding Suscripcion.CostoMensual}" />
+            <HorizontalStackLayout>
+                <Label Text="Renovación Automática:" VerticalOptions="Center" />
+                <Switch IsToggled="{Binding Suscripcion.RenovacionAutomatica}" />
+            </HorizontalStackLayout>
+
+            <Button Text="Guardar Suscripción" Command="{Binding GuardarCommand}" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
