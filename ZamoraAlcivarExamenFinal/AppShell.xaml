@@ -3,13 +3,18 @@
     x:Class="ZamoraAlcivarExamenFinal.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:ZamoraAlcivarExamenFinal"
-    Shell.FlyoutBehavior="Disabled"
-    Title="ZamoraAlcivarExamenFinal">
+    xmlns:views="clr-namespace:ZamoraAlcivarExamenFinal.Views"
+    FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
-
+    <TabBar>
+        <Tab Title="Nueva Suscripción">
+            <ShellContent ContentTemplate="{DataTemplate views:CrearSuscripcionPage}" />
+        </Tab>
+        <Tab Title="Suscripciones">
+            <ShellContent ContentTemplate="{DataTemplate views:ListaSuscripcionesPage}" />
+        </Tab>
+        <Tab Title="Registro Logs">
+            <ShellContent ContentTemplate="{DataTemplate views:LogsPage}" />
+        </Tab>
+    </TabBar>
 </Shell>
